@@ -1,8 +1,0 @@
-<IfModule mod_rewrite.c>
-
-	RewriteEngine on
-
-	RewriteCond %{SERVER_PORT} 80
-	RewriteRule ^(.*)$ https://beta.davidhunter.scot/$1 [R=301,L]
-
-</IfModule>
