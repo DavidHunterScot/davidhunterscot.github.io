@@ -1,0 +1,83 @@
+body {
+	font-family: sans-serif;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 50px;
+}
+
+p {
+	margin: 24px 16px;
+}
+
+.non-js-nav {
+	background-color: #333;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+}
+
+.non-js-nav:after {
+	content: "";
+    display: table;
+    clear: both;
+}
+
+.non-js-nav-item {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.non-js-nav-brand {
+	font-weight: bold;
+	text-align: center;
+}
+
+.non-js-nav-item-link {
+	font-weight: 500;
+}
+
+.non-js-nav-item-link, .non-js-nav-brand {
+	padding: 10px 16px;
+	display: block;
+	color: #c0c0c0;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: transparent;
+}
+
+.non-js-nav .non-js-nav-item {
+	display: none;
+}
+
+.non-js-nav:hover .non-js-nav-item {
+	display: block;
+}
+
+.non-js-nav-item-link:hover, .non-js-nav-brand:hover {
+	background-color: #555;
+}
+
+@media (min-width: 600px) {
+	.non-js-nav-item, .non-js-nav-brand {
+		float: left;
+		text-align: left;
+	}
+	
+	.non-js-nav .non-js-nav-item {
+		display: block;
+	}
+	
+	.non-js-brand {
+		text-align: left;
+	}
+	
+	.hide-desktop {
+		display: none;
+	}
+}
