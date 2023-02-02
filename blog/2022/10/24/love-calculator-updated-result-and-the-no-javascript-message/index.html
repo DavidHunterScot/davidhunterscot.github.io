@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Love Calculator: Updated Result and the No JavaScript message - Blog - David Hunter</title>
+
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+                    <link rel="stylesheet" type="text/css" href="https://webfonts.staticly.ict.rocks/poppins/poppins.css">
+            <link rel="stylesheet" type="text/css" href="/assets/css/stylesheet.css">
+        </head>
+    
+    <body>
+        <header>
+    <div class="container">
+        <h1><a href="/">David Hunter</a></h1>
+        <p><i>Personal Website</i></p>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/blog/" class="current">Blog</a>
+    </div>
+</nav>
+
+        <main>
+            <div class="container">
+
+<article class="blog-entry">
+    <div class="metadata">
+                    <div class="avatar"><img src="https://images.staticly.ict.rocks/avatars/davidhunter_illustration_transparent_1.png" alt="David Hunter's Avatar"></div>
+        
+        <div class="info">
+            <p><b>Written By</b><br>David Hunter</p>
+            <p><b>Published</b><br>24th October 2022<br>1:14 am</p>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h2 class="title">Love Calculator: Updated Result and the No JavaScript message</h2>
+
+        
+<h2>The result is now rounded to the nearest whole number.</h2>
+
+<p>Some results came out with a decimal place precision, and although sometimes it looked okay, there were some results that came out with a rediculous precision, so I had to do something.</p>
+
+<p>I started off by fixing the result to two decimal places, but that made the whole numbers also have the two decimal place precision, and that made it feel less like a game.</p>
+
+<p>To make it feel more like a game again, I made the decision to round all results to the nearest whole number.</p>
+
+<p>Basically, this means you will always see results like 23% instead of 22.33%.</p>
+
+
+<h2>Fixed the No JavaScript message not appearing in some cases, and improved its visibility</h2>
+
+<p>Before this update, I was using the HTML tag called "noscript", which is an old tag not added to some mobile browsers, specifically Brave on iOS is where I saw it, but it may also have affected others.</p>
+
+<p>To fix this, I needed a more modern approach that I knew would have a much higher chance of being supported in all browsers in use today.</p>
+
+<p>I changed the noscript tag to a div tag and applied some styles to it to make it more visible. Then JavaScript is used to make that div disappear, meaning the message will still show for those with JavaScript disabled, but will hide for those with it enabled.</p>
+
+<p>After making the update live, I went to Brave on iOS to verify it worked as expected, and it did.</p>
+
+
+<h2>Conclusion</h2>
+
+<p>This was a relatively small update, but still important. Let me know your feedback.</p>
+
+    </div>
+</article>
+
+
+            </div>
+        </main>
+
+        <footer>
+    <div class="container">
+        <p>Copyright &copy; David Hunter.</p>
+        <p><a href="javascript: void();" id="toggle_color_scheme_button"></a></p>
+    </div>
+</footer>
+
+                    <script src="/assets/js/anti-email-harvesting.js"></script>
+            <script src="/assets/js/toggle-color-scheme.js"></script>
+        </body>
+</html>
